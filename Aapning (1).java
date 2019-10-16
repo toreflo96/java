@@ -1,6 +1,16 @@
-public class Aapning extends HvitRute{
+public class Aapning extends HvitRute {
+    Aapning(int rad, int kol, Labyrint labyrint) {
+        super(rad, kol, labyrint);
+    }
 
-  public Aapning(int rad, int kol, Labyrint lab){
-    super(rad, kol, lab);
-  }
+    @Override
+    public char tilTegn() {
+        return 'A';
+    }
+
+    @Override
+    public void gaa(String vei, Rute komFra) {
+        vei += toString();
+        labyrint.losninger.settInn(vei);
+    }
 }

@@ -24,7 +24,6 @@ class Oblig5 {
         l.settMinimalUtskrift();
 
         // les start-koordinater fra standard input
-        System.out.println("skriv inn kolonne og rad");
         Scanner inn = new Scanner(System.in);
         while (inn.hasNextLine()) {
             String[] ord = inn.nextLine().split(" ");
